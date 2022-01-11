@@ -31,5 +31,7 @@ var ct = "https://twitter.com/"+getUrlParameter('ct');
   body{ margin:0px;}
 </style>
 <script>
-    $("a.twitter-timeline").attr("href", ct);
+    $(document).ready(function() {
+     $("a.twitter-timeline").attr("href", ct);
+    }
 </script>
