@@ -1,0 +1,31 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script>
+
+var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = window.location.search.substring(1),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return typeof sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+        }
+    }
+    return false;
+};
+
+var ct = getUrlParameter('ct');
+var symbolsa = 'jack';
+//symbolsa = 'BINANCE:BTCUSDT';
+  alert(symbolsa);
+</script>
+
+<a class="twitter-timeline" data-width="350" data-height="600" href="https://twitter.com/btctn">Tweets by Bitcoin News</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<style>
+.timeline-Footer{display: none;}
+  body{ margin:0px;}
+</style>
