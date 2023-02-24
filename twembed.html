@@ -22,10 +22,13 @@ var ct = "https://twitter.com/"+getUrlParameter('ct');
 //var symbolsa = 'jack';
 //symbolsa = 'BINANCE:BTCUSDT';
  alert(ct);
-    $("a.twitter-timeline").attr("href", ct);
+ //   $("a.twitter-timeline").attr("href", ct);
+    
+     document.getElementById("namatw").href = ct;
+    
 </script>
 
-<a class="twitter-timeline" data-width="350" data-height="600" href="https://twitter.com/btctn">Tweets</a>
+<a id="namatw" class="twitter-timeline" data-width="350" data-height="600" href="https://twitter.com/btctn">Tweets</a>
 
 <script>
     $(document).ready(function() {
